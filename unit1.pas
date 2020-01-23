@@ -68,15 +68,15 @@ begin
     wnd:=0;
     lpVerb:=nil;
     lpFile:='MySQLInstanceConfig.exe';
-    lpParameters:='-i -q  "-lC:\mysql_install_log.txt" "-nMySQL Server 5.5"  "-pC:\Program Files\MySQL\MySQL Server 5.5" -v 5.5.60  ServerType=DEVELOPMENT DatabaseType=MIXED   ConnectionUsage=DSS Port=3306 ServiceName=MySQL5.5 RootPassword=root ConnectionCount=50';
+    lpParameters:='-i -q  "-lC:\mysql_install_log.txt" "-nMySQL Server 5.5"  "-pC:\Program Files\MySQL\MySQL Server 5.5" -v 5.5.60  ServerType=DEVELOPMENT DatabaseType=MIXED   ConnectionUsage=DSS Port=3306 ServiceName=MySQL5.5 RootPassword=root ConnectionCount=50 Charset=gbk';
     lpDirectory:='C:\Program Files\MySQL\MySQL Server 5.5\bin';
     nShow:=SW_HIDE;
     hInstApp:=0;
   end;
 
   ShellExecuteExA(@ConfigEXEINFO);
-  Sleep(1000);
-  WaitForSingleObject(ConfigEXEINFO.hProcess, INFINITE);
+  Sleep(5000);
+  //WaitForSingleObject(ConfigEXEINFO.hProcess, INFINITE);
   CloseHandle(ConfigEXEINFO.hProcess);
   CloseHandle(EXEINFO.hProcess);
   Button1.Enabled:=true;
