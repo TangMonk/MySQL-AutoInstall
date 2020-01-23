@@ -1,0 +1,37 @@
+object Form1: TForm1
+  Left = 313
+  Height = 297
+  Top = 153
+  Width = 397
+  BorderStyle = bsDialog
+  Caption = 'MYSQL 自动安装'
+  ClientHeight = 297
+  ClientWidth = 397
+  DesignTimePPI = 119
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 144
+    Height = 30
+    Top = 128
+    Width = 104
+    Caption = '安装'
+    ParentBidiMode = False
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 120
+    Height = 27
+    Top = 72
+    Width = 155
+    Caption = 'MySQL 自动安装'
+    Font.CharSet = GB2312_CHARSET
+    Font.Color = clBlack
+    Font.Height = -20
+    Font.Name = 'Microsoft YaHei UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end
