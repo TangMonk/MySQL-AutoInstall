@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 313
+  Left = 267
   Height = 297
-  Top = 153
+  Top = 518
   Width = 397
   BorderStyle = bsDialog
   Caption = 'MYSQL 自动安装'
